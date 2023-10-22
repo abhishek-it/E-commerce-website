@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Poppins:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 64px;
+    color: black;
+}
+
+h4{
+    font-size: 46px;
+}
+h6{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+p{
+    font-size: 16px;
+    
+}
+
+
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+.logo{
+    width: 140px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color:rgb(255, 255, 255) ;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: orange;
+}
+
+#navbar li a.active:after,
+#navbar li a:hover::after
+{
+   content: "";
+   width: 30%;
+   height: 2px;
+   bottom:-4px;
+   left: 20px;
+   background-color: orange;
+   position: absolute ;
+}
+
+#hero{
+    background-image: url("img/turmeric.jpeg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top 25% right 0%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#white{
+  color: white;
+}
+#orange{
+    color: orange;
+    font-family: 'Lobster', cursive, sans-serif;
+}
+#buy{
+    background-image:url(img/button.png);
+    border: 0;
+    background-color: transparent;
+    color: wheat;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 14px 80px 14px 65px;
+}
+
+#product
+{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid beige;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0,0.02);
+    transition: 0.2s ease;
+    margin: 15px 0;
+}
+
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgb(0, 0, 0,0.06);
+}
+
+#product .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+#product1{
+    text-align: center;
+}
+
+#halad{
+    border-radius: 20px;
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: brown;
+    font-size: 12px;
+}
+
+#product .pro .des h5{
+    padding-top: 8px;
+    columns: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 183, 25)
+}
+
+.price{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #c24848;
+}
+
+.buy{
+    width: 72px;
+    height: 40px;
+    line-height: 26px;
+    border-radius: 5px white;
+    margin-top: 7px;
+    border-radius: 14px;
+    background: rgb(97, 80, 80);
+    color: white;
+     font-size: 17px;
+  
+}
+.buy:hover{
+   background-color: red;
+}
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.health{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+   padding-top: 150px;
+}
+
+.title{
+    padding: 0px 100px;
+}
+#About-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#about-us{
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-bottom: 45px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.review-container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    max-width: 987px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4em 0;
+}
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.swiper.swiper-slide.flex{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.swiper.swiper-slide.comments{
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 9em;
+    position: relative;
+}
+.swiper.swiper-slide.comments::after{
+    content: "";
+    position: absolute;
+    bottom: 19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20pc solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid ;
+    z-index: -99;
+    background-color: black;
+
+}
+
+.swiper.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+
+}
+.Emma{
+    width: 15%;
+    border-radius: 50%;
+
+  
+}
+
+.orange{
+    color: orange;
+}
+
+.text-light{
+    padding: 20px;
+}
+
+.comment-padding{
+    padding-top: 50px;
+}
+.star{
+    font-size: 12px;
+    color: rgb(243, 183, 25)
+}
+
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
